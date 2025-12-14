@@ -3,284 +3,564 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind CSS -->
+    <title>Portfolio - Kanero Juniar</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Portofolio - Kanero Juniar</title>
-
-    <!-- font -->
     <link
-      href="https://fonts.googleapis.com/css?family=Lemonada"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-
-    <!-- CSS -->
-    <style>
-      body {
-        font-family: "Lemonada";
-      }
-      #name {
-        text-shadow: 1px 0 1px #fff, 0 1px 1px #fff, -1px 0 1px #fff,
-          0 -1px 1px #fff;
-      }
-      #OutBlue {
-        text-shadow: 1px 0 1px #00a3ff, 0 1px 1px #00a3ff, -1px 0 1px #00a3ff,
-          0 -1px 1px #00a3ff;
-      }
-      #OutBlack {
-        text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000,
-          0 -1px 1px #000;
-      }
-    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
-
-  <body class="bg-[#083B76] pb-10">
-    <!-- TOP -->
-    <!-- TOP -->
-    <!-- TOP -->
-    <div class="relative grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div class="m-auto">
-        <img
-          src="Image/Kanero.png"
-          alt="Kanero"
-          class="bg-white w-[18rem] rounded-full mt-14 sm:w-[25rem] sm:mt-32 hover:bg-gradient-to-b from-[#00a3ff] to-[#8E38FA]"
-        />
-      </div>
-
-      <div class="sm:mt-60">
-        <p
-          class="text-center text-4xl font-semibold text-[#0075FF] my-2 sm:text-5xl xl:text-6xl"
-          id="name"
+  <body>
+    <div class="bg-gray-100 font-sans">
+      <div class="md:flex md:min-h-screen">
+        <!-- screen desktop -->
+        <aside
+          class="w-64 h-screen fixed top-0 left-0 bg-white shadow-md shadow-blue-200 p-6 flex flex-col items-center invisible md:visible"
         >
-          KANERO JUNIAR
-        </p>
-        <p
-          class="text-center text-2xl font-medium text-[#fff] my-2 sm:text-3xl"
-          id="OutBlue"
-        >
-          Web Developer | Graphic Design
-        </p>
+          <!-- Foto Profil -->
+          <div class="flex flex-col items-center mb-5">
+            <img
+              src="Image/Kaneroo.jpg"
+              alt="Profile"
+              class="w-40 h-40 rounded-full object-cover mb-3 shadow-md shadow-blue-200"
+            />
+            <h2 class="mt-2 text-2xl font-bold">Kanero Juniar</h2>
+            <p class="text-sm text-sky-500">Web Developer || Design Graphic</p>
+          </div>
 
-        <div
-          class="relative ml-24 grid grid-cols-8 sm:grid-cols-7 sm:ml-24 xl:grid-cols-8 gap-4 xl:ml-40"
-        >
-          <!-- email -->
-          <a href="mailto:kanero.095@gmail.com" class="mx-5" target="_blank">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              class="size-10 m-auto mt-1.5 stroke-white stroke-2 transition delay-75 hover:stroke-black hover:p-0.5"
-              alt="Email-business"
+          <!-- Navside -->
+          <nav class="space-y-1">
+            <!-- CV -->
+            <button
+              class="mb-2 bg-sky-500 hover:bg-sky-700 shadow-lg hover:shadow-gray-700 w-[40%] sm:w-40 h-10 rounded-3xl mx-1 hover:bg-[#0075FF]"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
-              />
-            </svg>
-          </a>
+              <a
+                href="https://docs.google.com/uc?export=download&id=1u930WdqiKrwAZj4tjeFjGqpMmr2hfJiC"
+                class="button font-bold text-white text-[85%] hover:text-gray-200"
+                id="OutBlack"
+                >Download CV</a
+              >
+            </button>
 
-          <!-- linkedln -->
-          <a
-            href="https://www.linkedin.com/in/kanero-juniar-840a62273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            class="mx-5"
-            target="_blank"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-10 m-auto mt-1.5 fill-white hover:fill-black transition delay-75 hover:stroke-black hover:p-0.5"
-              viewBox="0 0 30 30"
-            >
-              <path
-                d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"
-              ></path>
-            </svg>
-          </a>
-
-          <!-- ig -->
-          <a
-            href="https://www.instagram.com/kanero95?igsh=MTNndjBwMmY1aGgzdw=="
-            class="mx-5"
-            target="_blank"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-10 m-auto mt-1.5 stroke-white stroke-2 transition delay-75 hover:stroke-black hover:p-0.5"
-              viewBox="0 0 50 50"
-            >
-              <path
-                d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
-              ></path>
-            </svg>
-          </a>
-
-          <!-- github -->
-          <a href="https://github.com/Kanero095" class="mx-5" target="_blank">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="size-10 m-auto mt-1.5 stroke-white stroke-2 transition delay-75 hover:stroke-black hover:p-0.5"
-              viewBox="0 0 64 64"
-            >
-              <path
-                d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
-              ></path>
-            </svg>
-          </a>
-
-          <!-- WhatsApp / Wa -->
-          <a href="https://wa.link/mx57vc" class="mx-5" target="_blank">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="33"
-              height="33"
-              class="bi bi-whatsapp mt-[10px] fill-white transition delay-75 hover:fill-black hover:p-0.5"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-              />
-            </svg>
-          </a>
-        </div>
-
-        <div class="mt-5 ml-[10%] xl:ml-32">
-          <!-- more btn -->
-          <button
-            class="bg-transparant border-2 w-[40%] sm:w-40 h-10 rounded-3xl mx-1 hover:bg-[#0075FF]"
-          >
+            <!-- Email -->
             <a
-              href="#more"
-              class="button font-bold text-white text-[85%]"
-              id="OutBlack"
+              href="mailto:kanero.095@gmail.com"
+              class="flex items-center space-x-3 group"
             >
-              More
+              <i
+                class="fas fa-envelope text-black text-xl group-hover:text-white group-hover:bg-black px-2 py-1 rounded-full transition"
+              ></i>
+              <span
+                class="text-gray-700 group-hover:font-semibold group-hover:text-black"
+                >Email</span
+              >
             </a>
-          </button>
 
-          <!-- donwload cv btn -->
-          <button
-            class="bg-transparant border-2 w-[40%] sm:w-40 h-10 rounded-3xl mx-1 hover:bg-[#0075FF]"
-          >
+            <!-- Linkedin -->
             <a
-              href="https://docs.google.com/uc?export=download&id=14E6g8tphPz81XSA1OwFvmFE_dzV-oXu7"
-              class="button font-bold text-white text-[85%]"
-              id="OutBlack"
-              >Download CV</a
+              href="https://www.linkedin.com/in/kanero-juniar-840a62273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              class="flex items-center space-x-3 group"
             >
-          </button>
-        </div>
+              <i
+                class="fab fa-linkedin text-black text-xl group-hover:text-white group-hover:bg-black px-2 py-1 rounded-full transition"
+              ></i>
+              <span
+                class="text-gray-700 group-hover:font-semibold group-hover:text-black"
+                >LinkedIn</span
+              >
+            </a>
+
+            <!-- Instagram / IG -->
+            <a
+              href="https://www.instagram.com/kanero95?igsh=MTNndjBwMmY1aGgzdw=="
+              target="_blank"
+              class="flex items-center space-x-3 group"
+            >
+              <i
+                class="fab fa-instagram text-black text-xl group-hover:text-white group-hover:bg-black px-2 py-1 rounded-full transition"
+              ></i>
+              <span
+                class="text-gray-700 group-hover:font-semibold group-hover:text-black"
+                >Instagram</span
+              >
+            </a>
+
+            <!-- github -->
+            <a
+              href="https://github.com/Kanero095"
+              target="_blank"
+              class="flex items-center space-x-3 group"
+            >
+              <i
+                class="fab fa-github text-black text-xl group-hover:text-white group-hover:bg-black px-2 py-1 rounded-full transition"
+              ></i>
+              <span
+                class="text-gray-700 group-hover:font-semibold group-hover:text-black"
+                >GitHub</span
+              >
+            </a>
+
+            <!-- WhatsApp / WA -->
+            <a
+              href="https://wa.link/mx57vc"
+              target="_blank"
+              class="flex items-center space-x-3 group"
+            >
+              <i
+                class="fab fa-whatsapp text-black text-xl group-hover:text-white group-hover:bg-black px-2 py-1 rounded-full transition"
+              ></i>
+              <span
+                class="text-gray-700 group-hover:font-semibold group-hover:text-black"
+                >WhatsApp</span
+              >
+            </a>
+          </nav>
+        </aside>
+
+        <!-- Konten Utama -->
+        <main class="md:ml-64 flex-1">
+          <!-- Navbar Sticky -->
+          <!-- <nav class="sticky top-4 flex justify-center gap-3 z-10">
+            <a
+              href="#about"
+              class="px-4 py-2 bg-blue-500 text-white rounded-full shadow hover:bg-blue-600 transition"
+            >
+              About
+            </a>
+            <a
+              href="#pendidikan"
+              class="px-4 py-2 bg-red-500 text-white rounded-full shadow hover:bg-red-600 transition"
+            >
+              Pendidikan
+            </a>
+            <a
+              href="#experience"
+              class="px-4 py-2 bg-green-500 text-white rounded-full shadow hover:bg-green-600 transition"
+            >
+              Pengalaman
+            </a>
+            <a
+              href="#skills"
+              class="px-4 py-2 bg-purple-500 text-white rounded-full shadow hover:bg-purple-600 transition"
+            >
+              Skill
+            </a>
+            <a
+              href="#projects"
+              class="px-4 py-2 bg-pink-500 text-white rounded-full shadow hover:bg-pink-600 transition"
+            >
+              Projek
+            </a>
+          </nav> -->
+
+          <!-- screen mobile -->
+          <div
+            class="bg-gray-50 min-h-screen md:hidden relative grid grid-cols-1 pb-32"
+          >
+            <div class="m-auto">
+              <img
+                src="Image/Kaneroo.jpg"
+                alt="Kanero"
+                class="w-[18rem] shadow-md shadow-blue-200 rounded-full mt-14 sm:w-[25rem] sm:mt-32 hover:bg-gradient-to-b from-[#00a3ff] to-[#8E38FA]"
+              />
+            </div>
+            <div>
+              <p class="text-center text-4xl font-bold mt-6" id="name">
+                KANERO JUNIAR
+              </p>
+              <p
+                class="text-center text-2xl font-medium text-sky-500 my-2"
+                id="OutBlue"
+              >
+                Web Developer || Graphic Design
+              </p>
+            </div>
+
+            <div
+              class="relative ml-16 grid grid-cols-7 sm:grid-cols-7 xl:grid-cols-8 sm:ml-24 gap-4 xl:ml-40"
+            >
+              <!-- email -->
+              <a
+                href="mailto:kanero.095@gmail.com"
+                class="mx-5"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  class="size-10 m-auto mt-1.5 stroke-black stroke-2 transition delay-75 hover:stroke-gray-400 hover:p-0.5"
+                  alt="Email-business"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+              </a>
+
+              <!-- linkedln -->
+              <a
+                href="https://www.linkedin.com/in/kanero-juniar-840a62273?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="mx-5"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-10 m-auto mt-1.5 fill-black hover:fill-gray-400 transition delay-75 hover:p-0.5"
+                  viewBox="0 0 30 30"
+                >
+                  <path
+                    d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"
+                  ></path>
+                </svg>
+              </a>
+
+              <!-- github -->
+              <a
+                href="https://github.com/Kanero095"
+                class="mx-5"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-10 m-auto mt-1.5 stroke-white stroke-2 transition delay-75 hover:stroke-black hover:p-0.5"
+                  viewBox="0 0 64 64"
+                >
+                  <path
+                    d="M32 6C17.641 6 6 17.641 6 32c0 12.277 8.512 22.56 19.955 25.286-.592-.141-1.179-.299-1.755-.479V50.85c0 0-.975.325-2.275.325-3.637 0-5.148-3.245-5.525-4.875-.229-.993-.827-1.934-1.469-2.509-.767-.684-1.126-.686-1.131-.92-.01-.491.658-.471.975-.471 1.625 0 2.857 1.729 3.429 2.623 1.417 2.207 2.938 2.577 3.721 2.577.975 0 1.817-.146 2.397-.426.268-1.888 1.108-3.57 2.478-4.774-6.097-1.219-10.4-4.716-10.4-10.4 0-2.928 1.175-5.619 3.133-7.792C19.333 23.641 19 22.494 19 20.625c0-1.235.086-2.751.65-4.225 0 0 3.708.026 7.205 3.338C28.469 19.268 30.196 19 32 19s3.531.268 5.145.738c3.497-3.312 7.205-3.338 7.205-3.338.567 1.474.65 2.99.65 4.225 0 2.015-.268 3.19-.432 3.697C46.466 26.475 47.6 29.124 47.6 32c0 5.684-4.303 9.181-10.4 10.4 1.628 1.43 2.6 3.513 2.6 5.85v8.557c-.576.181-1.162.338-1.755.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6zM33.813 57.93C33.214 57.972 32.61 58 32 58 32.61 58 33.213 57.971 33.813 57.93zM37.786 57.346c-1.164.265-2.357.451-3.575.554C35.429 57.797 36.622 57.61 37.786 57.346zM32 58c-.61 0-1.214-.028-1.813-.07C30.787 57.971 31.39 58 32 58zM29.788 57.9c-1.217-.103-2.411-.289-3.574-.554C27.378 57.61 28.571 57.797 29.788 57.9z"
+                  ></path>
+                </svg>
+              </a>
+
+              <!-- ig -->
+              <a
+                href="https://www.instagram.com/kanero95?igsh=MTNndjBwMmY1aGgzdw=="
+                class="mx-5"
+                target="_blank"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="size-10 m-auto mt-1.5 stroke-black stroke-2 transition delay-75 hover:stroke-gray-400 hover:p-0.5"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 16 3 C 8.8324839 3 3 8.8324839 3 16 L 3 34 C 3 41.167516 8.8324839 47 16 47 L 34 47 C 41.167516 47 47 41.167516 47 34 L 47 16 C 47 8.8324839 41.167516 3 34 3 L 16 3 z M 16 5 L 34 5 C 40.086484 5 45 9.9135161 45 16 L 45 34 C 45 40.086484 40.086484 45 34 45 L 16 45 C 9.9135161 45 5 40.086484 5 34 L 5 16 C 5 9.9135161 9.9135161 5 16 5 z M 37 11 A 2 2 0 0 0 35 13 A 2 2 0 0 0 37 15 A 2 2 0 0 0 39 13 A 2 2 0 0 0 37 11 z M 25 14 C 18.936712 14 14 18.936712 14 25 C 14 31.063288 18.936712 36 25 36 C 31.063288 36 36 31.063288 36 25 C 36 18.936712 31.063288 14 25 14 z M 25 16 C 29.982407 16 34 20.017593 34 25 C 34 29.982407 29.982407 34 25 34 C 20.017593 34 16 29.982407 16 25 C 16 20.017593 20.017593 16 25 16 z"
+                  ></path>
+                </svg>
+              </a>
+
+              <!-- WhatsApp / Wa -->
+              <a href="https://wa.link/mx57vc" class="mx-5" target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="33"
+                  height="33"
+                  class="bi bi-whatsapp mt-[10px] fill-black transition delay-75 hover:fill-gray-400 hover:p-0.5"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Section: About -->
+          <section
+            id="about"
+            class="min-h-screen flex flex-col items-center justify-center text-center md:bg-gray-50"
+          >
+            <h2 class="text-2xl font-bold mb-4">About Me</h2>
+            <p class="text-gray-700 leading-relaxed max-w-3xl px-4">
+              Lulusan S1 Teknik Informatika Universitas Bina Darma Palembang
+              dengan IPK 3.96, memiliki pengalaman sebagai Freelance Web
+              Developer yang berfokus pada pengembangan aplikasi berbasis web.
+              Terampil menggunakan Framework Laravel, Tailwind CSS, HTML, CSS,
+              Boostrap, dan MySQL dalam membangun sistem yang efisien dan
+              responsif. Serta memiliki keterampilan dibidang desain grafis
+              sebagai media promosi digital menggunakan Adobe Photoshop, Corel
+              Draw, dan Canva. Memiliki kemampuan analisis, komunikasi, dan
+              kolaborasi tim yang baik, serta berorientasi pada hasil dan
+              kepuasan pengguna.
+            </p>
+          </section>
+
+          <!-- Section: Riwayat pendidikan -->
+          <section id="pendidikan" class="p-6 bg-gray-50 md:bg-gray-100">
+            <h2 class="text-2xl font-bold text-center sm:mt-8 md:mt-0 mb-2">
+              Riwayat Pendidikan
+            </h2>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              class="bg-gray-50 py-4 px-4 md:px-6 my-4 rounded-xl border-2 border-gray-100 hover:border-blue-100 hover:shadow-lg hover:shadow-blue-200"
+            >
+              <h3 class="text-xl font-bold mb-1">
+                Universitas Bina Darma (2021 - 2025)
+              </h3>
+              <p class="text-gray-700 leading-relaxed">
+                S1-Teknik Informatika | IPK : 3.96/4.00
+              </p>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              class="bg-gray-50 py-4 px-4 md:px-6 my-4 rounded-xl border-2 border-gray-100 hover:border-blue-100 hover:shadow-lg hover:shadow-blue-200"
+            >
+              <h3 class="text-xl font-bold mb-1">
+                SMA Negeri 1 Tulung Selapan (2018 - 2021)
+              </h3>
+              <p class="text-gray-700 leading-relaxed text-justify">
+                IPA | Nilai Rata-rata : 86.00
+              </p>
+            </div>
+          </section>
+
+          <!-- Section: Pengalaman -->
+          <section id="experience" class="p-6 md:bg-gray-50">
+            <h2 class="text-2xl font-bold text-center mt-8 mb-4">
+              Pengalaman Kerja
+            </h2>
+            <div
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              class="bg-gray-50 py-4 px-4 md:px-6 my-4 rounded-xl border-2 border-gray-100 hover:border-blue-100 hover:shadow-lg hover:shadow-blue-200"
+            >
+              <h3 class="font-bold text-justify">
+                Dinas Koperasi dan Usaha Kecil Menengah Provinsi Sumatera
+                Selatan
+              </h3>
+              <p class="font-semibold">
+                Bidang: Web Developer
+                <span class="text-gray-600">(Studi Independen)</span>
+              </p>
+              <p class="text-gray-600 mb-3">
+                🗓️ September 2024 - Desember 2024
+              </p>
+              <ul class="list-disc pl-8 text-gray-700 text-justify">
+                <li>
+                  Membangun aplikasi web registrasi keanggotaan Sriwijaya Bisnis
+                  Center (SIBICE’) untuk pengembangan usaha bagi para UMKM
+                  terutama di kota Palembang.
+                </li>
+                <li>
+                  Menjadi wadah informasi mengenai tenant-tenant UMKM yang telah
+                  menjadi anggota dari Sriwijaya Bisnis Center.
+                </li>
+                <li>
+                  Bahasa pemrograman yang digunakan dalam membangun aplikasi
+                  adalah Framework Laravel dan Tailwind CSS.
+                </li>
+              </ul>
+            </div>
+
+            <div
+              data-aos="fade-up"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+              class="bg-gray-50 py-4 px-4 md:px-6 my-4 rounded-xl border-2 border-gray-100 hover:border-blue-100 hover:shadow-lg hover:shadow-blue-200"
+            >
+              <h3 class="font-bold text-justify">Universitas Bina Darma</h3>
+              <p class="font-semibold">
+                Bidang: UIUX Designer
+                <span class="text-gray-600">(Magang)</span>
+              </p>
+              <p class="text-gray-600 mb-3">🗓️ Februari 2024 - Juni 2024</p>
+              <ul class="list-disc pl-8 text-gray-700 text-justify">
+                <li>
+                  Merancang dan mengembangkan desain antarmuka aplikasi berbasis
+                  web menggunakan Figma.
+                </li>
+                <li>
+                  Melakukan proses UX research untuk memastikan rancangan UI
+                  memenuhi kebutuhan dan preferensi pengguna.
+                </li>
+                <li>
+                  Menghasilkan prototype yang responsif, konsisten, dan siap
+                  diimplementasikan oleh tim developer.
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Section: Skill -->
+          <section id="skills" class="p-6 bg-gray-50 md:bg-gray-100">
+            <h2 class="text-2xl font-bold text-center mt-8 mb-6">Skill</h2>
+            <div class="flex flex-wrap gap-4">
+              <span class="px-4 py-2 bg-orange-100 text-orange-800 rounded-lg"
+                >HTML</span
+              >
+              <span class="px-4 py-2 bg-lime-100 text-lime-800 rounded-lg"
+                >CSS</span
+              >
+              <span class="px-4 py-2 bg-teal-100 text-teal-800 rounded-lg"
+                >MySql</span
+              >
+              <span class="px-4 py-2 bg-red-100 text-red-800 rounded-lg"
+                >Laravel</span
+              >
+              <span class="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg"
+                >TailwindCSS</span
+              >
+              <span class="px-4 py-2 bg-indigo-100 text-indigo-800 rounded-lg"
+                >Boostrap</span
+              >
+              <span class="px-4 py-2 bg-green-100 text-green-800 rounded-lg"
+                >Canva</span
+              >
+              <span class="px-4 py-2 bg-sky-100 text-sky-800 rounded-lg"
+                >Adobe Photoshop</span
+              >
+              <span class="px-4 py-2 bg-amber-100 text-amber-800 rounded-lg"
+                >Corel Draw</span
+              >
+              <span class="px-4 py-2 bg-violet-100 text-violet-800 rounded-lg"
+                >Team Work</span
+              >
+              <span class="px-4 py-2 bg-pink-100 text-pink-800 rounded-lg"
+                >Critical Thinking</span
+              >
+              <span class="px-4 py-2 bg-purple-100 text-purple-800 rounded-lg"
+                >Communication</span
+              >
+              <span class="px-4 py-2 bg-yellow-100 text-yellow-800 rounded-lg"
+                >Creative</span
+              >
+            </div>
+          </section>
+
+          <!-- Section: Projek -->
+          <section id="projects" class="p-6 min-h-screen md:bg-gray-50">
+            <h2 class="text-2xl font-bold text-center mt-8 mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <!-- Project 6 -->
+              <a href="https://sibice.onrender.com/">
+                <div
+                  class="p-4 bg-white rounded-lg shadow hover:shadow-lg hover:shadow-blue-200"
+                >
+                  <img
+                    src="Image/SIBICE.jpg"
+                    alt=""
+                    class="rounded shadow shadow-blue-200"
+                  />
+                  <h3 class="font-semibold mt-1 mb-2">SIBICE’</h3>
+                  <p class="text-gray-600">
+                    Sriwijawa Bisnis Center adalah inkubator bisnis umkm binaan
+                    dari Dinas Koperasi dan UKM Provinsi Sumatera Selatan.
+                    Umumnya, inkubator bisnis adalah suatu program yang
+                    ditawarkan oleh berbagai lembaga guna mendukung usaha
+                    pemula. Dukungan pada program tersebut berupa bimbingan dan
+                    penyediaan ruang untuk mengembangkan ide.
+                  </p>
+                </div>
+              </a>
+
+              <!-- Project 5 -->
+              <a>
+                <div
+                  class="p-4 bg-white rounded-lg shadow hover:shadow-lg hover:shadow-blue-200"
+                >
+                  <img
+                    src="Image/elearning.png"
+                    alt=""
+                    class="rounded shadow shadow-blue-200"
+                  />
+                  <h3 class="font-semibold mt-1 mb-2">E-Learning</h3>
+                  <p class="text-gray-600">
+                    A Laravel-based E-Learning platform built with an MVC
+                    architecture and MySQL database to support structured course
+                    management, learning material distribution, and assignment
+                    submission. Equipped with secure authentication, role-based
+                    access control, and an intuitive interface for a
+                    professional digital learning experience.
+                  </p>
+                </div>
+              </a>
+
+              <!-- Project 4 -->
+              <a
+                href="https://kanero095.github.io/SMK-Negeri-1-BP-bangsa-Raja/"
+              >
+                <div
+                  class="p-4 bg-white rounded-lg shadow hover:shadow-lg hover:shadow-blue-200"
+                >
+                  <img
+                    src="Image/sisfo-smk.png"
+                    alt=""
+                    class="rounded shadow shadow-blue-200"
+                  />
+                  <h3 class="font-semibold mt-1 mb-2">
+                    Sistem Informasi SMK-Negeri 1 BP bangsa Raja
+                  </h3>
+                  <p class="text-gray-600">
+                    is a website that provides information about SMK Negeri 1 BP
+                    Bangsa Raja. The information provided includes the history
+                    and profile of the school, its vision and mission, teaching
+                    staff, and available majors.
+                  </p>
+                </div>
+              </a>
+
+              <!-- Project 3 -->
+              <a>
+                <div
+                  class="p-4 bg-white rounded-lg shadow hover:shadow-lg hover:shadow-blue-200"
+                >
+                  <img
+                    src="Image/theplants.jpg"
+                    alt=""
+                    class="rounded container shadow shadow-blue-200"
+                  />
+                  <h3 class="font-semibold mt-1 mb-2">The Plants</h3>
+                  <p class="text-gray-600">
+                    The Plant is a platform that provides information and
+                    education about plants in Indonesia, including plants that
+                    are not widely known by the Indonesian people. The plants
+                    displayed have been grouped by classification and by
+                    category.
+                  </p>
+                </div>
+              </a>
+
+              <!-- Project 1 -->
+              <a>
+                <div
+                  class="p-4 bg-white rounded-lg shadow hover:shadow-lg hover:shadow-blue-200"
+                >
+                  <img
+                    src="Image/inventoryarnet.png"
+                    alt=""
+                    class="rounded container shadow shadow-blue-200"
+                  />
+                  <h3 class="font-semibold mt-1 mb-2">InventoryArnet</h3>
+                  <p class="text-gray-600">
+                    It is a web-based application used to record computer
+                    devices that come in and go out, the number of devices still
+                    available for use and those that have been borrowed.
+                    Computer data stored in the database is synchronized between
+                    the head office and branch offices.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </section>
+        </main>
       </div>
     </div>
 
-    <!-- MIDDLE 1 -->
-    <!-- MIDDLE 1 -->
-    <!-- MIDDLE 1 -->
-    <span id="more"></span>
-    <div class="mt-36 mb-20 px-10 sm:px-24 sm:mt-60">
-      <p class="ml-5 text-white text-3xl sm:text-5xl" id="OutBlue">
-        Tentang Saya :
-      </p>
-      <div
-        class="border-4 border-[#00A3FF] rounded-3xl px-8 py-7 sm:px-10 sm:py-7"
-      >
-        <p class="leading-loose text-white text-xl">
-          <span class="text-2xl font-semibold"> Hai, Saya Kanero Juniar. </span>
-          <br />
-          Saya adalah seorang Web Developer, yang terampil menggunakan Framework
-          laravel dan Tailwind CSS. Saya mulai belajar Laravel dan Tailwind CSS
-          ketika saya sedang menjalani perkuliahan. Saya juga menguasai
-          kemampuan dibidang Graphic Design menggunakan tools Canva, Photoshop,
-          serta Corel Draw
-        </p>
-      </div>
-    </div>
-
-    <!-- MIDDLE 2 -->
-    <!-- MIDDLE 2 -->
-    <!-- MIDDLE 2 -->
-    <div class="mt-36 mb-36 px-10 sm:px-24 sm:mt-60">
-      <p class="ml-5 text-white text-3xl sm:text-5xl" id="OutBlue">
-        Kemampuan Saya :
-      </p>
-      <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-4 mt-3">
-        <!-- laravel -->
-        <div class="border-2 border-[#00A3FF] rounded-3xl">
-          <img
-            src="Image/Laravel.png"
-            alt="Laravel"
-            class="size-20 w-auto m-auto my-5 sm:my-12 sm:size-32 sm:w-auto"
-          />
-        </div>
-        <!-- tailwind css -->
-        <div class="border-2 border-[#00A3FF] rounded-3xl">
-          <img
-            src="Image/Tailwind_CSS.png"
-            alt="Tailwind_CSS"
-            class="size-16 w-auto m-auto my-7 sm:my-16 sm:size-24 sm:w-auto"
-          />
-        </div>
-        <!-- html -->
-        <div class="border-2 border-[#00A3FF] rounded-3xl">
-          <img
-            src="Image/HTML5.png"
-            alt="HTML5"
-            class="size-20 w-auto m-auto my-5 sm:my-12 sm:size-32 sm:w-auto"
-          />
-        </div>
-      </div>
-    </div>
-
-    <!-- bottom-->
-    <!-- bottom-->
-    <!-- bottom-->
-    <div class="mt-36 mb-36 px-10 sm:px-24 sm:mt-60">
-      <p class="ml-5 text-white text-3xl sm:text-5xl" id="OutBlue">
-        Projek Saya :
-      </p>
-      <div class="relative grid grid-cols-1 sm:grid-cols-3 gap-4 mt-3">
-        <!-- projek 1 -->
-        <div class="rounded-3xl">
-          <img
-            src="Image/ThePlant.jpg"
-            alt="ThePlant"
-            class="w-auto h-64 m-auto border-2 border-[#00A3FF] rounded-3xl"
-          />
-          <p
-            class="text-center mt-2 text-2xl font-bold text-white"
-            id="OutBlue"
-          >
-            The Plant
-          </p>
-        </div>
-        <!-- projek 2 -->
-        <div class="rounded-3xl">
-          <img
-            src="Image/InventoryArnet.png"
-            alt="Tailwind_CSS"
-            class="border-2 border-[#00A3FF] w-[22rem] sm:w-auto h-64 m-auto rounded-3xl"
-          />
-          <p
-            class="text-center mt-2 text-2xl font-bold text-white"
-            id="OutBlue"
-          >
-            Inventory Arnet
-          </p>
-        </div>
-        <!-- projek 3-->
-        <div class="rounded-3xl">
-          <img
-            src="Image/InovatorCenter.png"
-            alt="Inovator Center"
-            class="border-2 border-[#00A3FF] h-64 w-auto m-auto rounded-3xl"
-          />
-          <p
-            class="text-center mt-2 text-2xl font-bold text-white"
-            id="OutBlue"
-          >
-            Inovator Center
-          </p>
-        </div>
-      </div>
-    </div>
+    <!-- Script -->
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
